@@ -55,3 +55,90 @@ table = [[a, b, a * b] for b in range(1, 11)]
 print("\nMultiplication Table")
 for i in table:
 	print (i)
+
+
+###############################################################################
+# Python program to print 3D list
+# importing pretty printed
+import pprint
+  
+def ThreeD(a, b, c):
+    lst = [[ ['#' for col in range(a)] for col in range(b)] for row in range(c)]
+    return lst
+      
+# Driver Code
+col1 = 5
+col2 = 3
+row = 2
+# used the pretty printed function
+pprint.pprint(ThreeD(col1, col2, row))
+
+
+##################################################
+matrix = []
+
+for i in range(5):
+	
+	# Append an empty sublist inside the list
+	matrix.append([])
+	
+	for j in range(5):
+		matrix[i].append(j)
+		
+print(matrix)
+
+###################
+# Nested list comprehension
+matrix = [[j for j in range(5)] for i in range(5)]
+
+print(matrix)
+
+
+#######################################################
+
+# 2-D List
+matrix = [[1, 2, 3], [4, 5], [6, 7, 8, 9]]
+
+flatten_matrix = []
+
+for sublist in matrix:
+	for val in sublist:
+		flatten_matrix.append(val)
+		
+print(flatten_matrix)
+#############
+
+# 2-D List
+matrix = [[1, 2, 3], [4, 5], [6, 7, 8, 9]]
+
+# Nested List Comprehension to flatten a given 2-D matrix
+flatten_matrix = [val for sublist in matrix for val in sublist]
+
+print(flatten_matrix)
+
+############################################################
+
+
+# 2-D List of planets
+planets = [['Mercury', 'Venus', 'Earth'], ['Mars', 'Jupiter', 'Saturn'], ['Uranus', 'Neptune', 'Pluto']]
+
+flatten_planets = []
+
+for sublist in planets:
+	for planet in sublist:
+		
+		if len(planet) < 6:
+			flatten_planets.append(planet)
+		
+print(flatten_planets)
+####################
+
+# 2-D List of planets
+planets = [['Mercury', 'Venus', 'Earth'], ['Mars', 'Jupiter', 'Saturn'], ['Uranus', 'Neptune', 'Pluto']]
+
+# Nested List comprehension with an if condition
+flatten_planets = [planet for sublist in planets for planet in sublist if len(planet) < 6]
+		
+print(flatten_planets)
+
+#######################################################################

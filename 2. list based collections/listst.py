@@ -4,6 +4,16 @@ Collections in Python are containers used for storing data and are commonly know
 Python has a built-in collections module providing additional data structures for collections of data.
 
 
+List	                                                            Array
+Can consist of elements belonging to different data types.	Only consists of elements belonging to the same data type
+No need to explicitly import a module for declaration.	Need to explicitly import a module for declaration
+Cannot directly handle arithmetic operations.	Can directly handle arithmetic operations
+Can be nested to contain different type of elements. 	Must contain either all nested elements of same size
+Preferred for shorter sequence of data items.	Preferred for longer sequence of data items
+Greater flexibility allows easy modification (addition, deletion) of data.	Less flexibility since addition, deletion has to be done element wise
+The entire list can be printed without any explicit looping. 	A loop has to be formed to print or access the components of array
+Consume larger memory for easy addition of elements	Comparatively more compact in memory size
+
 
 
 Python has an interesting data stucture called a "list" that is much more than a mere list. In fact, a Python list actually encompasses the functionality of almost every list-based data structure in this lesson.

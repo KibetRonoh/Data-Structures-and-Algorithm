@@ -3,6 +3,9 @@ odd_square = [x ** 2 for x in range(1, 11) if x % 2 == 1]
 print(odd_square)
 
 
+even_squares = [x ** 2 for x in range(1, 30) if x % 2 == 0]
+print(even_squares)
+
 # Alternatively
 # for understanding, above generation is same as,
 odd_square1 = []
@@ -50,7 +53,8 @@ print (numbers)
 
 # A list of list for multiplication table
 a = 5
-table = [[a, b, a * b] for b in range(1, 11)]
+c = 4
+table = [[a, b, c, a * b * c] for b in range(1, 11)]
 
 print("\nMultiplication Table")
 for i in table:

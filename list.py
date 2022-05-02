@@ -2,7 +2,7 @@
 sliced_list = list[3:8]
 sliced_list2 = list[5:]
 sliced_list3 = list[:]
-sliced_list4 = list[:-6]
+sliced_list4 = list[:-6]# from [0] to -6 excluding -6
 sliced_list5 = list[-6:-1]
 sliced_list6 = list[::-1]
 
@@ -12,7 +12,9 @@ print(sliced_list3)
 print(sliced_list4)
 print(sliced_list5)
 print(sliced_list6)
+
 """
+
 lst =list(range(1, 11))
 print (lst)
 
@@ -44,7 +46,8 @@ print (lst_rev)
 lst_rev_9_5_2 = lst[9 : 4 : -2]
 print (lst_rev_9_5_2)
 
-
+listest = lst[9 : 2 : -2]
+print(listest)
 
 
 """
@@ -84,5 +87,13 @@ list1 = [25, 18, 9, 41, 26, 31]
 list2 = [25, 45, 3, 32, 15, 20]
 print(Merge(list1, list2))
 
+##################################
 
+def Merge(list1, list2):
+	f_list = list1 + list2
+	f_list.sort()
+	return (f_list)
 
+list1 = [6, 5, 4, 3, 2, 1, 0]
+list2 = [6, 7, 8, 9]
+print(Merge(list1, list2))

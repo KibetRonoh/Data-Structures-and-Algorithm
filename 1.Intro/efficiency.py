@@ -11,8 +11,8 @@
  - its used for creating an outline or rough draft of a program
  """
 
- """
- ################
+"""
+################
 O(n) - its a way to measure an algorithms efficiency. It measures the 
 time it takes to run your function as the input grows
 *Big O is sometimes refered to as algorithms upper bound, meaning it 
@@ -21,21 +21,21 @@ deals with the worst-case scenario
 
 There are two parts of measuring efficiency:
 1. Time complexity is a measure of how lomg the function takes to run in 
-    terms of its computational steps
+   terms of its computational steps
 2. Space complexity has to do with the amount of memory used by the function
 
 - WORST CASE scenarion
-    * Checking all posible outcomes e.g checking the letters of 
-    alphabet 26 times 
-    * we focus on Worst case because it puts an upper bound to 
-    ammount of time our code is going to take
-    
-        A B C D E .........M N ...........W X Y Z 
-		1 2 3 ..........   13 .............24 25 26
-		-1 is the best case
-		-13 is Average case
-		-26 is worst case
- ################
+   * Checking all posible outcomes e.g checking the letters of 
+   alphabet 26 times 
+   * we focus on Worst case because it puts an upper bound to 
+   ammount of time our code is going to take
+   
+       A B C D E .........M N ...........W X Y Z 
+       1 2 3 ..........   13 .............24 25 26
+       -1 is the best case
+       -13 is Average case
+       -26 is worst case
+################
 
 
 
@@ -44,18 +44,23 @@ a single manatee has properties like "name", "age", et cetera
 n = the number of elements in "manatees"
 m = the number of properties per "manatee" (i.e. the number of keys in a manatee dictionary)
 """
+
+
 def example1(manatees):
     for manatee in manatees:
-        print manatee['name']
+        print(manatee['name'])
+
 
 def example2(manatees):
-    print manatees[0]['name']
-    print manatees[0]['age']
+    print(manatees[0]['name'])
+    print(manatees[0]['age'])
+
 
 def example3(manatees):
     for manatee in manatees:
         for manatee_property in manatee:
-            print manatee_property, ": ", manatee[manatee_property]
+            print(manatee_property, ": ", manatee[manatee_property])
+
 
 def example4(manatees):
     oldest_manatee = "No manatees here!"
@@ -65,4 +70,4 @@ def example4(manatees):
                 oldest_manatee = manatee2['name']
             else:
                 oldest_manatee = manatee1['name']
-    print oldest_manatee
+    print(oldest_manatee)

@@ -46,7 +46,9 @@ m = the number of properties per "manatee" (i.e. the number of keys in a manatee
 """
 
 
-
+def example1(manatees):
+    for manatee in manatees:
+        print(manatee['name'])
 
 
 def example2(manatees):

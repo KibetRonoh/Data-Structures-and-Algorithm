@@ -1,2 +1,4 @@
-from collections import deque
-deque()
+d = Queue()
+
+q.push(7)
+print(q)

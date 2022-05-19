@@ -19,4 +19,6 @@ print(lost)
 lost.pop(3)
 print(lost)
 
+lost.remove(4)
+print(lost)
 

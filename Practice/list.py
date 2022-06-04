@@ -13,11 +13,7 @@ for i in range(1, 9):
     lost.append(i)
 print(lost)
 
-lost.pop()
-print(lost)
 
-lost.pop(3)
-print(lost)
 
 lost.remove(4)
 print(lost)
